@@ -29,6 +29,10 @@ body {
   height: 100vh;
 }
 
+.search .page-header {
+  display: none;
+}
+
 /*BUTTONS*/
 .social-links {
   margin-top: 30px;
