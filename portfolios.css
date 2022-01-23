@@ -49,6 +49,7 @@ nav a:hover {
   color: var(--special-color-3);
 }
 .container {
+  position: relative;
   width: 1100px;
   height: 90%;
   margin: 0 auto;
@@ -57,46 +58,69 @@ nav a:hover {
   align-items: center;
   font-size: 20px;
 }
-.container p {
-  text-align: center;
-}
-.container .box {
-  text-align: center;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 360px;
-  height: 120px;
-  padding: 20px;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 0px 15px -5px #00000070;
-}
-.container .box:hover {
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
-  transition: all 250ms linear;
-}
-.container .undergrad {
-  background-color: black;
-  margin-right: 30px;
-  color: var(--special-color-3);
-}
-.container .undergrad:hover {
-  color: var(--special-color-3);
-}
-.container .undergrad a {
-  color: white;
-  text-decoration: none;
-}
-.container .undergrad a:hover {
-  color: var(--special-color-3);
-}
 
 .fa-file-download {
   font-size: 30px;
 }
+.game-button {
+  position: absolute;
+  top: 40%;
+  width: 200px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none !important;
+  outline: none !important;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: .1em;
+  text-shadow: 2px 2px 1px #0066a2, -2px 2px 1px #0066a2, 2px -2px 1px #0066a2, -2px -2px 1px #0066a2, 0px 2px 1px #0066a2, 0px -2px 1px #0066a2, 0px 4px 1px #004a87, 2px 4px 1px #004a87, -2px 4px 1px  #004a87;
+  border: none;
+  margin: 15px 15px 30px;
+  background: repeating-linear-gradient( 45deg, #3ebbf7, #3ebbf7 5px, #45b1f4 5px, #45b1f4 10px);
+  border-bottom: 3px solid rgba(16, 91, 146, 0.5);
+  border-top: 3px solid rgba(255,255,255,.3);
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 10px 0px 10px;
+  box-shadow: 0 6px 0 #266b91, 0 8px 1px 1px rgba(0,0,0,.3), 0 10px 0 5px #12517d, 0 12px 0 5px #1a6b9a, 0 15px 0 5px #0c405e, 0 15px 1px 6px rgba(0,0,0,.3);
+}
+.game-button:hover {
+  box-shadow: 0 4px 0 #266b91, 0 6px 1px 1px rgba(0,0,0,.3), 0 8px 0 5px #12517d, 0 10px 0 5px #1a6b9a, 0 13px 0 5px #0c405e, 0 13px 1px 6px rgba(0,0,0,.3);
+}
+
+  .game-button.green {
+    background: repeating-linear-gradient( 45deg, #54d440, #54d440 5px, #52cc3f 5px, #52cc3f 10px);
+     box-shadow: 0 6px 0 #348628, 0 8px 1px 1px rgba(0,0,0,.3), 0 10px 0 5px #2a6d20, 0 12px 0 5px #39822e, 0 15px 0 5px #1d4c16, 0 15px 1px 6px rgba(0,0,0,.3);
+     border-bottom: 3px solid rgba(40, 117, 29, 0.5);
+     text-shadow: 2px 2px 1px #348628, -2px 2px 1px #348628, 2px -2px 1px #348628, -2px -2px 1px #348628, 0px 2px 1px #348628, 0px -2px 1px #348628, 0px 4px 1px #1d4c16, 2px 4px 1px #1d4c16, -2px 4px 1px #1d4c16;
+ }
+ .game-button.green:hover {
+   box-shadow: 0 4px 0 #348628, 0 6px 1px 1px rgba(0,0,0,.3), 0 8px 0 5px #2a6d20, 0 10px 0 5px #39822e, 0 13px 0 5px #1d4c16, 0 13px 1px 6px rgba(0,0,0,.3);
+ }
+  .progress {
+    position: absolute;
+    border: 3px solid #05e35e;
+    height: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 60px;
+    width: 100%
+  }
+  
+  .progress .progress__bar {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-bar 3s infinite;
+  }
+  
+  @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
 /*FOOTER*/
 footer {
   position: fixed;
