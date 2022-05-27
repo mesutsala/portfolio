@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --background-color: #cac8c8;
+  --special-color: #906272;
+  --special-color-2: #7703c5;
+  --special-color-3: #3498db;
+  --special-color-4: #8a74c4;
+  --gret-text: #525252;
+  --blue-text: #1d4ce7;
+  scroll-behavior: smooth;
+  font-family: "Press Start 2P", cursive;
+  scroll-behavior: smooth;
+}
+a {
+  cursor: pointer;
+}
+
+body {
+  height: 80vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.page-header {
+  position: relative;
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0rem;
+  z-index: 2;
+}
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(0, 0, 0);
+  pointer-events: none;
+}
+/*NAV*/
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  padding: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger {
+  cursor: pointer;
+}
+body.hide {
+  /* class hide added in JS */
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 1100px;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.fa-file-download {
+  font-size: 30px;
+}
+.progress {
+  position: absolute;
+  border: 3px solid rgb(116, 221, 116);
+  height: 15px;
+  margin-left: auto;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.progress .progress__bar {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(116, 221, 116);
+  animation: fill-bar 3s infinite;
+}
+
+@keyframes fill-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*FOOTER*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  color: var(--gret-text);
+  font-size: 16px;
+  text-decoration: none;
+}
+@media (min-width: 300px) and (max-width: 950px) {
+  .container {
+    width: 100%;
+    margin: -30px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .box {
+    width: 220px;
+    height: 110px;
+    margin: 20px;
+    padding: 60px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .progress {
+    width: 90%;
+  }
+  .fas {
+    display: none;
+  }
+  footer p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
