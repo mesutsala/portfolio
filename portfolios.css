@@ -126,7 +126,7 @@ footer p {
   text-decoration: none;
 }
 @media (min-width: 300px) and (max-width: 950px) {
-      nav {
+  nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
