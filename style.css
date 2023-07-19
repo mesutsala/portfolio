@@ -16,10 +16,6 @@ html {
   font-family: "Press Start 2P", cursive;
   scroll-behavior: smooth;
 }
-
-/* .underline {
-  color: var(--special-color-3);
-} */
 body {
   height: 90vh;
   overflow-x: hidden;
@@ -127,10 +123,6 @@ body.hide {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.profile p {
-  font-size: 50px;
-  padding-bottom: 20px;
 }
 .social-links {
   text-align: center;
