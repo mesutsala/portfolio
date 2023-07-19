@@ -21,7 +21,7 @@ html {
   color: var(--special-color-3);
 } */
 body {
-  height: 80vh;
+  height: 90vh;
   overflow-x: hidden;
   position: relative;
 }
@@ -38,35 +38,6 @@ body {
   padding: 2rem 0rem;
   z-index: 2;
 }
-.line1,
-.line2 {
-  width: 3rem;
-  height: 0.2rem;
-  margin: 0.4rem;
-  background: rgb(0, 0, 0);
-  pointer-events: none;
-}
-/*NAV*/
-.nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  display: flex;
-  padding: 5rem;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 1;
-  opacity: 1;
-  clip-path: circle(50px at 100% -10%);
-  -webkit-clip-path: circle(50px at 100% -10%);
-}
-
-.burger {
-  cursor: pointer;
-}
 
 body.hide {
   /* class hide added in JS */
@@ -74,7 +45,7 @@ body.hide {
 }
 /*BUTTONS*/
 .social-links {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .btn {
@@ -157,25 +128,6 @@ body.hide {
   align-items: center;
   text-align: center;
 }
-/*
-.profile-img {
-  width: 150px;
-  border-radius: 10%;
-  margin-bottom: 20px;
-  border: 2px solid lightgray;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  background: #f1f1f1;
-  box-shadow: 0 5px 15px -5px #00000070;
-  overflow: hidden;
-  position: relative;
-}
-.profile img:hover {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-*/
 .profile p {
   font-size: 50px;
   padding-bottom: 20px;
@@ -210,34 +162,8 @@ footer p {
 }
 
 @media (min-width: 300px) and (max-width: 950px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    background-color: transparent;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 10px;
-    transition: 0.5s;
-  }
-  nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  h2 {
-    font-size: 20px;
-  }
   #welcome-section {
-    height: 50%;
+    height: 80%;
     width: 100%;
     margin: 0 auto;
     transform: translateY(20%);
