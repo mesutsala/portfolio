@@ -1,4 +1,5 @@
-/* 1. CLOUD FONTS IMPORT */
+/* 1. CLOUD FONTS IMPORT (CONTAINS DAFT FONT CDN & PIXEL ART CSS) */
+@import url('https://cdnfonts.com');
 @import url('https://googleapis.com');
 
 * {
@@ -17,7 +18,7 @@ html {
   --gret-text: #888888;
   --blue-text: #ffffff;
   scroll-behavior: smooth;
-  font-family: "Press Start 2P", cursive; /* Restores global pixel style */
+  font-family: "Press Start 2P", cursive; /* Base style for site buttons */
 }
 
 body {
@@ -30,15 +31,15 @@ body {
 
 /* 2. THE CHOSEN LOGOTYPE FONT ISOLATED ONLY TO H1 */
 #welcome-section h1.daft-punk-text {
-  font-family: 'New Rocker', cursive !important; 
-  font-size: 6rem;
+  font-family: 'Daft Font', sans-serif !important; /* Hooks into the exact cdnfonts family name */
+  font-size: 7rem;
   font-weight: 400;
   color: #ffffff !important;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   margin-bottom: 25px;
   display: block !important;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .page-header {
@@ -77,7 +78,7 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
-  color: #ffffff !important; 
+  color: #ffffff !important; /* Icons stay crisp white */
 }
 
 .btn:hover i {
@@ -171,7 +172,7 @@ footer p {
   color: var(--gret-text);
   font-size: 16px;
   text-decoration: none;
-  /* FORCED RESTORATION: Explicitly forces pixel typography style */
+  /* FORCED RESTORATION: Explicitly forces your pixel typography style */
   font-family: "Press Start 2P", cursive !important; 
 }
 
@@ -183,7 +184,7 @@ footer p {
     transform: translateY(20%);
   }
   #welcome-section h1.daft-punk-text {
-    font-size: 3.5rem;
+    font-size: 4rem; /* Scaled cleanly for mobile viewport windows */
   }
   footer p {
     font-size: 10px;
