@@ -1,7 +1,5 @@
-/* 1. IMPORT EXACT DAFT PUNK REPLICA FONT FROM CDN */
-@import url('https://cdnfonts.com');
-
-@import url("https://googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://googleapis.com');
 
 * {
   margin: 0;
@@ -10,6 +8,7 @@
 }
 
 html {
+  /* CHANGED: Swapped theme to pure black and bright accent text */
   --background-color: #000000;
   --special-color: #906272;
   --special-color-2: #7703c5;
@@ -25,20 +24,21 @@ body {
   height: 90vh;
   overflow-x: hidden;
   position: relative;
+  /* ADDED: Enforces black background and white base text color */
   background-color: var(--background-color) !important;
   color: #ffffff !important;
 }
 
-/* 2. THE TEXT STYLE HOOKED TO THE CDN FONT */
+/* ADDED: Custom Daft Punk text style for your name */
 .daft-punk-text {
-  font-family: 'Daft Font', sans-serif !important; /* References the CDN package font-family name */
-  font-size: 5rem;                               /* Large logotype style */
-  font-weight: normal;
+  font-family: 'Major Mono Display', monospace !important;
+  font-size: 3.5rem;
+  font-weight: 900;
   color: #ffffff !important;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  display: block !important;
+  letter-spacing: 6px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
 }
 
 .page-header {
@@ -56,15 +56,17 @@ body {
 }
 
 body.hide {
+  /* class hide added in JS */
   overflow: hidden;
 }
 
-/* BUTTONS */
+/*BUTTONS*/
 .social-links {
   margin-top: 0px;
 }
 
 .btn {
+  /* CHANGED: Made icon buttons dark gray to sit nicely on black background */
   background: #1a1a1a;
   margin: 10px;
   padding: 10px;
@@ -77,6 +79,7 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
+  /* CHANGED: Keeps the icon shapes crisp and white */
   color: #ffffff !important; 
 }
 
@@ -103,9 +106,18 @@ body.hide {
 }
 
 @keyframes animateBtn {
-  0% { left: -110%; top: 90%; }
-  50% { left: 10%; top: -30%; }
-  100% { top: -10%; left: -10%; }
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
 }
 
 .about-btn {
@@ -130,7 +142,7 @@ body.hide {
   font-size: 20px;
 }
 
-/* WELCOME SECTION */
+/*WELCOMESECTION */
 #welcome-section {
   width: 1100px;
   margin: 0 auto;
@@ -155,12 +167,13 @@ body.hide {
   text-decoration: none;
 }
 
-/* FOOTER */
+/*FOOTER*/
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  /* CHANGED: Made footer background black so it blends into the page */
   background-color: #000000;
   color: white;
   text-align: center;
@@ -179,9 +192,6 @@ footer p {
     width: 100%;
     margin: 0 auto;
     transform: translateY(20%);
-  }
-  .daft-punk-text {
-    font-size: 3rem;
   }
   footer p {
     font-size: 10px;
