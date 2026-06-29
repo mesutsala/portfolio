@@ -1,26 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://googleapis.com');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
-  --background-color: #cac8c8;
+  /* CHANGED: Swapped theme to pure black and bright accent text */
+  --background-color: #000000;
   --special-color: #906272;
   --special-color-2: #7703c5;
   --special-color-3: #3498db;
   --special-color-4: #8a74c4;
-  --gret-text: #525252;
-  --blue-text: #1d4ce7;
+  --gret-text: #a0a0a0;
+  --blue-text: #ffffff;
   scroll-behavior: smooth;
   font-family: "Press Start 2P", cursive;
-  scroll-behavior: smooth;
 }
+
 body {
   height: 90vh;
   overflow-x: hidden;
   position: relative;
+  /* ADDED: Enforces black background and white base text color */
+  background-color: var(--background-color) !important;
+  color: #ffffff !important;
 }
+
+/* ADDED: Custom Daft Punk text style for your name */
+.daft-punk-text {
+  font-family: 'Major Mono Display', monospace !important;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
 .page-header {
   position: relative;
   min-height: 10vh;
@@ -39,13 +59,15 @@ body.hide {
   /* class hide added in JS */
   overflow: hidden;
 }
+
 /*BUTTONS*/
 .social-links {
   margin-top: 0px;
 }
 
 .btn {
-  background: #f1f1f1;
+  /* CHANGED: Made icon buttons dark gray to sit nicely on black background */
+  background: #1a1a1a;
   margin: 10px;
   padding: 10px;
   border-radius: 30%;
@@ -57,6 +79,8 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
+  /* CHANGED: Keeps the icon shapes crisp and white */
+  color: #ffffff !important; 
 }
 
 .btn:hover i {
@@ -74,11 +98,13 @@ body.hide {
   left: -110%;
   top: 90%;
 }
+
 .btn:hover::before {
   animation: animateBtn 0.7s 1;
   top: -10%;
   left: -10%;
 }
+
 @keyframes animateBtn {
   0% {
     left: -110%;
@@ -93,6 +119,7 @@ body.hide {
     left: -10%;
   }
 }
+
 .about-btn {
   background: #f1f1f1;
   color: black;
@@ -103,10 +130,12 @@ body.hide {
   overflow: hidden;
   position: relative;
 }
+
 .about-btn a {
   text-decoration: none;
   font-size: 20px;
 }
+
 .about-btn a:hover {
   color: var(--special-color-3);
   text-decoration: none;
@@ -124,10 +153,12 @@ body.hide {
   align-items: center;
   text-align: center;
 }
+
 .social-links {
   text-align: center;
   position: relative;
 }
+
 .social-links a {
   display: inline-block;
   color: var(--blue-text);
@@ -142,11 +173,13 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  /* CHANGED: Made footer background black so it blends into the page */
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 footer p {
   color: var(--gret-text);
   font-size: 16px;
