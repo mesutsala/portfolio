@@ -13,11 +13,10 @@ html {
   --background-color: #000000;
   --special-color: #906272;
   --special-color-2: #7703c5;
-  /* CHANGED: Turned your primary hover color variable into red */
-  --special-color-3: #ff0000; 
+  --special-color-3: #3498db; /* RESTORED: Reset variable back to your original blue */
   --special-color-4: #8a74c4;
-  --gret-text: #888888;
-  --blue-text: #ffffff;
+  --gret-text: #525252;        /* RESTORED: Reset variable back to your original gray text */
+  --blue-text: #1d4ce7;       /* RESTORED: Reset variable back to your original blue text */
   scroll-behavior: smooth;
   font-family: "Press Start 2P", cursive;
 }
@@ -58,20 +57,17 @@ body {
 }
 
 body.hide {
+  /* class hide added in JS */
   overflow: hidden;
 }
 
-/* BUTTONS & SOCIAL CONTROLS */
-.social-links {
-  margin-top: 0px;
-}
-
+/* BUTTONS & SOCIAL CONTROLS - RESTORED EXACTLY TO ORIGINAL */
 .social-links {
   margin-top: 0px;
 }
 
 .btn {
-  background: #111111;
+  background: #f1f1f1; /* RESTORED */
   margin: 10px;
   padding: 10px;
   border-radius: 30%;
@@ -83,12 +79,12 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
-  color: #ffffff !important; 
+  color: initial; /* RESTORED */
 }
 
 .btn:hover i {
   transform: scale(1.3);
-  color: #ffffff;
+  color: #f1f1f1; /* RESTORED */
 }
 
 .btn::before {
@@ -96,7 +92,6 @@ body.hide {
   position: absolute;
   width: 120%;
   height: 120%;
-  /* References our updated red color variable */
   background: var(--special-color-3); 
   transform: rotate(45deg);
   left: -110%;
