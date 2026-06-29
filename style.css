@@ -66,9 +66,12 @@ body.hide {
   margin-top: 0px;
 }
 
+.social-links {
+  margin-top: 0px;
+}
+
 .btn {
-  /* CHANGED: Swapped background color to light yellow */
-  background: #fffae0; 
+  background: #111111;
   margin: 10px;
   padding: 10px;
   border-radius: 30%;
@@ -80,14 +83,12 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
-  /* CHANGED: Kept the brand vector shapes black so they read sharply on light yellow */
-  color: #000000 !important; 
+  color: #ffffff !important; 
 }
 
 .btn:hover i {
   transform: scale(1.3);
-  /* CHANGED: Keeps the icon white when the red wave fills the background */
-  color: #ffffff !important; 
+  color: #ffffff;
 }
 
 .btn::before {
