@@ -72,13 +72,14 @@ body.hide {
 }
 
 .btn {
-  background: #f1f1f1;
+  background: #111111;
   margin: 10px;
   padding: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
   overflow: hidden;
   position: relative;
+  border: 1px solid #ffffff20;
 }
 
 .btn i {
