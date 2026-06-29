@@ -1,5 +1,4 @@
-/* 1. CLOUD FONTS IMPORT (CONTAINS DAFT FONT CDN & PIXEL ART CSS) */
-@import url('https://cdnfonts.com');
+@import url('https://fonts.cdnfonts.com/css/daft-font');
 @import url('https://googleapis.com');
 
 * {
@@ -9,7 +8,6 @@
 }
 
 html {
-  /* DARK THEME BASE COLOR SCHEME */
   --background-color: #000000;
   --special-color: #906272;
   --special-color-2: #7703c5;
@@ -18,7 +16,7 @@ html {
   --gret-text: #888888;
   --blue-text: #ffffff;
   scroll-behavior: smooth;
-  font-family: "Press Start 2P", cursive; /* Base style for site buttons */
+  font-family: "Press Start 2P", cursive;
 }
 
 body {
@@ -31,7 +29,7 @@ body {
 
 /* 2. THE CHOSEN LOGOTYPE FONT ISOLATED ONLY TO H1 */
 #welcome-section h1.daft-punk-text {
-  font-family: 'Daft Font', sans-serif !important; /* Hooks into the exact cdnfonts family name */
+  font-family: 'Daft Font', sans-serif !important; /* Exact family key you found */
   font-size: 7rem;
   font-weight: 400;
   color: #ffffff !important;
@@ -78,7 +76,7 @@ body.hide {
 .btn i {
   font-size: 30px;
   transition: 0.2s linear;
-  color: #ffffff !important; /* Icons stay crisp white */
+  color: #ffffff !important; 
 }
 
 .btn:hover i {
@@ -172,7 +170,6 @@ footer p {
   color: var(--gret-text);
   font-size: 16px;
   text-decoration: none;
-  /* FORCED RESTORATION: Explicitly forces your pixel typography style */
   font-family: "Press Start 2P", cursive !important; 
 }
 
@@ -184,7 +181,7 @@ footer p {
     transform: translateY(20%);
   }
   #welcome-section h1.daft-punk-text {
-    font-size: 4rem; /* Scaled cleanly for mobile viewport windows */
+    font-size: 4rem; 
   }
   footer p {
     font-size: 10px;
