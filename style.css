@@ -1,11 +1,5 @@
-/* 1. CUSTOM DAFT PUNK FONT CONFIGURATION */
-@font-face {
-  font-family: 'DaftPunk';
-  src: url('/fonts/daft-font.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+/* 1. IMPORT EXACT DAFT PUNK REPLICA FONT FROM CDN */
+@import url('https://cdnfonts.com');
 
 @import url("https://googleapis.com");
 
@@ -35,15 +29,16 @@ body {
   color: #ffffff !important;
 }
 
-/* 2. THE TEXT STYLE USING YOUR NEW LOCAL FONT */
+/* 2. THE TEXT STYLE HOOKED TO THE CDN FONT */
 .daft-punk-text {
-  font-family: 'DaftPunk', sans-serif !important; /* Forces your local font asset */
-  font-size: 5.5rem;                              /* Scaled up slightly for the logotype style */
+  font-family: 'Daft Font', sans-serif !important; /* References the CDN package font-family name */
+  font-size: 5rem;                               /* Large logotype style */
   font-weight: normal;
   color: #ffffff !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  display: block !important;
 }
 
 .page-header {
